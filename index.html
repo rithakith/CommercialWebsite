@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commercial Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="searchBox">
+        <div class="searchBar">
+          <input
+            type="text"
+            name=""
+            id="searchInput"
+            placeholder="Enter item"
+          />
+          <input type="button" value="Search" id="searchButton" onclick="searchQuery();"/>
+        </div>
+        <div class="tags">
+          <button class="tagButtons" onclick="filter('All')">All</button>
+        </div>
+      </div>
+    </div>
+    <div class="cards"></div>
+    <script src="products.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
